@@ -40,6 +40,18 @@ class Arweave
     }
 
     /**
+     * Commit a transaction to the blockweave.
+     *
+     * @param  \Arweave\SDK\Support\Transaction $transaction
+     *
+     * @return \Arweave\SDK\Support\Transaction
+     */
+    public function commit(Transaction $transaction)
+    {
+        return $this->api->commit($transaction);
+    }
+
+    /**
      * Create a new transaction object from a given wallet and piece of data.
      *
      * @param  Wallet $wallet Sending wallet
