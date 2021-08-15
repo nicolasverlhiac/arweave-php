@@ -158,7 +158,7 @@ class API
     }
 
     /**
-     * Get the last transaction ID for the given wallet address.
+     * Get the balance for a given wallet. Unknown wallet addresses will simply return 0.
      *
      * @param  string $wallet_address
      *
